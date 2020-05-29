@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ $# == 0 ]; then
+	printf "ssh <UserName @ ip_addr>\n"
+fi
+
+if [[ $1 == "connect" && $# == 2 ]]; then
+	ssh beneathts@$2
+	exit 0
+fi
+
+printf "To connect u can type: \033[1m./17 connect <ip_addr>\033[0m\n"

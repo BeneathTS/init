@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Display ssh status
+systemctl status ssh

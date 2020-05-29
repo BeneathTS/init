@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Display answer
+printf "Amazon\n"
+
+# Display info about capabilities
+if [[ $1 != "About" && $1 != "about" ]]; then
+	printf "\n"
+	printf "You can use \"\033[4mAbout\033[0m\" arg for more info!\n"
+fi
+
+# Display "about" info
+if [[ $1 == "About" ||  $1 == "about" ]]; then
+	printf "\n"
+	printf "First that we need to do is find external ip of slash16.org\n"
+	printf "To find that addr we can use next commands:\n\033[1mhost slash16.org\nnslookup slash16.org\033[0m\n"
+	printf "then we can use whois or any web resources like ipinfo.io\n"
+fi

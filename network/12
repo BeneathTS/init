@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Display IP addr that was assigned to you by dhcp server
+ifconfig en0 | grep -w "inet" | cut -d ' ' -f2

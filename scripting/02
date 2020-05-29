@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ $1 ]; then
+	printf "Pomyanem $1 ;C\n"
+	sudo kill -9 $(pgrep -u $1)
+	sudo userdel $1
+	exit 0
+fi
+
+printf "Usage: ./02 User_Name\n"

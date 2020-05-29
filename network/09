@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Display answer
+printf "163.172.250.12\n163.172.250.13\n"
+
+# Display info about capabilities
+if [[ $1 != "About" && $1 != "about" ]]; then
+	printf "\n"
+	printf "You can use \"\033[4mAbout\033[0m\" arg for more info!\n"
+fi
+
+# Display "about" info
+if [[ $1 == "About" ||  $1 == "about" ]]; then
+	printf "\n"
+	printf "To find external addr we can use next commands:\n\033[1mhost 42.fr\nnslookup 42.fr\033[0m\n"
+fi

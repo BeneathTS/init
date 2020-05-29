@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Change/display hostname
+hostname $1

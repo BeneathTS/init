@@ -1,0 +1,3 @@
+#!/bin/bash
+
+printf "That deamon \033[1mcron\033[0m ofc!\n"

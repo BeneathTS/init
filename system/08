@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Display file that contains RSA keys that are authorized to connect via SSH
+printf "~/.ssh/authorized_keys\n"

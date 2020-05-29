@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Add new local User
+# Works only w/ root perm.
+if [[ $#  == 1 ]]; then
+	adduser $1
+	exit 0
+fi
+
+printf "Add any user name in arg to create user with that name\n"
+
+# deluser <User_name> to remove user

@@ -1,0 +1,4 @@
+#!/bin/bash
+# List of network interfaces names
+
+ifconfig -l

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Path to file that contain hostname on Debian based system
+printf "/etc/hostname\n"

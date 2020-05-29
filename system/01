@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Display location of file that contained installed linux version
+printf "/etc/os-release\n"

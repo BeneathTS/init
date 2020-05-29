@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Display Wi-Fi mac addr
+networksetup -getmacaddress "Wi-Fi" | cut -d ' ' -f3

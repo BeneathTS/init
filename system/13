@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Display all running processes
+ps aux

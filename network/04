@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Display default gateway in routing table
+netstat -nr | grep "default" | tr -s ' ' | cut -d ' ' -f2

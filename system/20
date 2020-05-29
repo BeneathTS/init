@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cat /etc/passwd | cut -d ':' -f1 | tr '\n' '\t'
+
+# Just NewLine. Nothing more :Kappa:
+echo ""

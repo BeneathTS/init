@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if [[ "$1" == "a" || "$1" == "A" || "$1" == "b" || "$1" == "B" ]]; then
+	# Get broadcast addr
+	BRDCST=$(ifconfig en0 | grep "broadcast" | rev | cut -d ' ' -f1 | rev)
+fi
+
+if [[ "$1" == "a" || "$1" == "A" ]]; then
+
+	# Display broadcast addr
+	printf "$BRDCST\n"
+	exit 0
+fi
+
+if [[ "$1" == "b" || "$1" == "B" ]]; then
+	
+	# Get all ip addrss
+	ping -t 1 $BRDCST > /dev/null
+	
+	# Display all subnet addr
+	arp -al | grep "en0" | cut -d ' ' -f1
+	exit 0
+fi
+
+# Usage
+printf "Use args:\nA - display broadcast address\nB - all subnet ip adresses\n"

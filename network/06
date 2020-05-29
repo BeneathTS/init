@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Display resolv.conf path if *nix
+printf "\033[1mPath:\033[0m /etc/resolv.conf\n"
+
+# Display info about capabilities
+if [[ $1 != "About" && $1 != "about" ]]; then
+	printf "\n"
+	printf "You can use \"\033[4mAbout\033[0m\" arg for more info!\n"
+fi
+
+# Display "about" info
+if [[ $1 == "About" ||  $1 == "about" ]]; then
+	printf "\n"
+	printf "\033[35mresolv.conf\033[0m - resolver configuration file.\n\n"
+	printf "\033[1mResolver\033[0m - The resolver is a \033[4mset of routines in the C library\033[0m that provide access to the Internet Domain Name System (DNS).\n"
+	printf "Resolver the first one read that config file, when they are invoked by a processes.\n"
+	printf "The file is designed to be human readable and contains a lot useful information for resolver.\n"
+fi

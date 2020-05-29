@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Display used and available space on the system
+df -h

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Display the route packets take to network host.
+traceroute -I slash16.org

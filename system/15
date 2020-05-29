@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pkill tail
+
+# Also can use: kill PID

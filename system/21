@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [[ $1 == "1" ]]; then
+	# If all real users have /home/ dir
+	cat /etc/passwd | grep '/home/' | cut -d ':' -f1
+	exit 0
+fi
+
+if [[ $1 == "2" ]]; then
+	# If user have passwd
+	sudo cat /etc/shadow | awk -F: '$2 != "*" && $2 !~ /^!/ {print $1}'
+	exit 0
+fi
+
+printf "Found 2 ways\n"
+printf "Use next args:\n"
+printf "\033[1m1\n2\033[0m\n"

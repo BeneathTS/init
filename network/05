@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ $# != 1 ]]; then
+	printf "Put your url like arg\nYou can put only 1 url!\n"
+	exit 0
+fi
+
+# Display DNS addr that responds to the url
+nslookup $1 | grep "Server" | tr -s "	"| cut -d "	" -f2

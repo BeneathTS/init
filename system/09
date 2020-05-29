@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Display all connected users to the system 
+who

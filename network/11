@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Display name and IP address of the device that makes the link between local network and the outside world
+printf "\033[1mName:\033[0m Network Address Translation (\033[4mNAT\033[0m)\n\033[1mIP addr:\033[0m 192.168.0.1\n"

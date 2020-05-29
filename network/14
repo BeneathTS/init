@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Display file name(with path) what contains local DNS entries
+printf "/etc/hosts\n"
